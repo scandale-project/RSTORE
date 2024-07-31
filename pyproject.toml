@@ -10,6 +10,7 @@ readme = "README.md"
 python = "^3.10"
 pydantic = "^2.8.2"
 fastapi = "^0.111.1"
+valkey = "^6.0.0b1"
 
 
 [build-system]
