@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "rstore"
 version = "0.1.0"
-description = "Report Storage and Tracking of Observations and Records Efficiently "
+description = "Report Storage and Tracking of Observations and Records Efficiently"
 authors = ["Cédric Bonhomme <cedric@cedricbonhomme.org>"]
 license = "AGPL-3.0-or-later"
 readme = "README.md"
@@ -13,6 +13,31 @@ fastapi = "^0.111.1"
 valkey = "^6.0.0b1"
 
 
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.1"
+flake8 = "^7.1.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+python_version = "3.11"
+check_untyped_defs = true
+ignore_errors = false
+ignore_missing_imports = true
+strict_optional = true
+no_implicit_optional = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unreachable = true
+
+show_error_context = true
+pretty = true
+
+exclude = "build|dist|docs"
+
+
+[tool.isort]
+profile = "black"
