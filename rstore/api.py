@@ -1,5 +1,3 @@
-import sys
-from ast import literal_eval
 from typing import Any
 from typing import Dict
 from typing import List
@@ -7,8 +5,6 @@ from typing import List
 from fastapi import Depends
 from fastapi import FastAPI
 from fastapi import HTTPException
-from fastapi import Request
-from fastapi import Response
 from fastapi import status
 from fastapi.openapi.utils import get_openapi
 from fastapi.security import HTTPBasic
