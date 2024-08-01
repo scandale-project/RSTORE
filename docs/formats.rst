@@ -9,16 +9,15 @@ hash table `h:` (history)
 
 - `h:ipv4` / `h:ipv6`
 - timestamp `epoch`
-- value -> json raw result
+- value -> JSON raw result
 
 domain name/hostname set `s:`-> `h:`
 ````````````````````````````````````
 
-If there is a domain name or hostname set -> ipv4 or ipv6.
+If there is a domain name or hostname set -> IPv4 or IPv6.
 
 - `s:domain` and `s:hostname`
-- value ipv4 or ipv6
-
+- value IPv4 or IPv6
 
 
 

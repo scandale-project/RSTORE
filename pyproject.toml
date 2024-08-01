@@ -5,6 +5,25 @@ description = "Report Storage and Tracking of Observations and Records Efficient
 authors = ["Cédric Bonhomme <cedric@cedricbonhomme.org>"]
 license = "AGPL-3.0-or-later"
 readme = "README.md"
+homepage = "https://github.com/scandale-project/RSTORE"
+repository = "https://github.com/scandale-project/RSTORE"
+documentation = "https://rstore.readthedocs.io"
+
+keywords = ["observations", "evidences", "kvrocks", "api"]
+
+classifiers = [
+    "Environment :: Console",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Security",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: FastAPI",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)"
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -13,11 +32,12 @@ fastapi = "^0.111.1"
 valkey = "^6.0.0b1"
 uvicorn = "^0.30.4"
 
-
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.11.1"
 flake8 = "^7.1.0"
 
+[tool.poetry.group.docs]
+optional = true
 
 [tool.poetry.group.docs.dependencies]
 sphinx = "^8.0.2"

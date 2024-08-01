@@ -27,7 +27,7 @@ In order to compile kvrocks, you will need a few packages:
 
     git clone --recursive https://github.com/apache/incubator-kvrocks.git kvrocks
     cd kvrocks
-    git checkout v2.5.1
+    git checkout v2.9.0
     ./x.py build
     cd ..
 
