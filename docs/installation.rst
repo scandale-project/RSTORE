@@ -1,6 +1,8 @@
 Installation
 ============
 
+RSTORE is composed of two main components: a database backend powered by Kvrocks and a Web API relying on FastAPI.
+
 Kvrocks
 -------
 
@@ -11,7 +13,7 @@ Kvrocks intends to decrease the cost of memory and increase the capability while
 .. note::
 
     Kvrocks should be installed from the source, and the repository must
-    be in one directory up as the one you will be cloning vulnerability-lookup into.
+    be in one directory up as the one you will be cloning RSTORE into.
 
 In order to compile kvrocks, you will need a few packages:
 
