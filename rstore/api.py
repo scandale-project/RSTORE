@@ -74,7 +74,6 @@ app.openapi = custom_openapi
 #
 # Item
 #
-
 @app.get("/items/", response_model=list[schemas.ItemBase])
 def read_items(
     skip: int = 0,
