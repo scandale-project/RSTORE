@@ -26,7 +26,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
-html_title = "sphinx_book_theme"
+html_title = 'RSTORE'
 html_theme_options = {
     "path_to_docs": "docs",
     "repository_url": "https://github.com/scandale-project/RSTORE",
