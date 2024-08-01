@@ -20,3 +20,9 @@ class ScanData(BaseModel):
 
     class Config:
         from_attributes = True
+
+class ItemBase(ScanData):
+    scan_data: ScanData
+
+    class Config:
+        from_attributes = True

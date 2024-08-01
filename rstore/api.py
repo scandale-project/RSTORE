@@ -14,6 +14,8 @@ from fastapi.openapi.utils import get_openapi
 from fastapi.security import HTTPBasic
 from fastapi.security import HTTPBasicCredentials
 
+from rstore import schemas
+
 try:
     from instance import config
 except Exception:
@@ -68,3 +70,16 @@ def custom_openapi() -> Dict[str, Any]:
 
 app.openapi = custom_openapi
 
+
+#
+# Item
+#
+
+@app.get("/items/", response_model=list[schemas.ItemBase])
+def read_items(
+    skip: int = 0,
+    limit: int = 100,
+    q: str = "",
+) -> List[schemas.ItemBase]:
+    items = []
+    return items
