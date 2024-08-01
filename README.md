@@ -15,12 +15,19 @@ The API is based on the [FastAPI](https://fastapi.tiangolo.com) framework
 well known for its excellent performance and [Pydantic](https://pydantic.dev)
 for the data validation.
 
+A [documentation](https://rstore.readthedocs.io) is available with more information.
+
 ### Why RSTORE ?
 
 As a CSIRT, we manage a substantial volume of scan results, notifications, and reports,
 which often overwhelm our ticketing system.
 To address this, we decided to develop our own tool for quick and efficient lookup of all
 notifications related to our activities.
+
+
+## Installation
+
+See the [installation section](https://rstore.readthedocs.io/en/latest/installation.html) of the documentation.
 
 
 ## License

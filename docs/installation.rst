@@ -1,6 +1,13 @@
 Installation
 ============
 
+Kvrocks
+-------
+
+Apache Kvrocks is a distributed key value NoSQL database that uses RocksDB as storage engine
+and is compatible with Redis protocol.
+
+
 FastAPI
 -------
 
