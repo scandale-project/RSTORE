@@ -2,14 +2,13 @@
 
 ## Presentation
 
-[RSTORE](https://github.com/scandale-project/RSTORE),
+[RSTORE](https://github.com/scandale-project/RSTORE)
 is a libre software which is providing a backend architecture
 for the reporting and tracking of observations and records efficiently.
-
-The platform is composed of:
+It is composed of:
 
 - a documented HTTP API;
-- a database backend based on kvrocks
+- a database backend based on [kvrocks](https://kvrocks.apache.org)
 
 The API is based on the [FastAPI](https://fastapi.tiangolo.com) framework
 well known for its excellent performance and [Pydantic](https://pydantic.dev)

@@ -5,10 +5,10 @@ RSTORE documentation
 is a libre software which is providing a backend architecture
 for the reporting and tracking of observations and records efficiently.
 
-The platform is composed of:
+It is composed of:
 
 - a documented HTTP API;
-- a database backend based on kvrocks
+- a database backend based on `kvrocks <https://kvrocks.apache.org>`_
 
 
 .. toctree::
