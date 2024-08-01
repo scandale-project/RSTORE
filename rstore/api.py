@@ -13,9 +13,9 @@ from fastapi.security import HTTPBasicCredentials
 from rstore import schemas
 
 try:
-    from instance import config
-except Exception:
-    from instance import sample as config  # type: ignore[no-redef]
+    from instance import config  # type: ignore
+except ImportError:
+    from instance import sample as config
 
 security = HTTPBasic()
 
