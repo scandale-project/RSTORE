@@ -15,7 +15,7 @@ from rstore import schemas
 try:
     from instance import config
 except Exception:
-    from instance import sample as config
+    from instance import sample as config  # type: ignore[no-redef]
 
 security = HTTPBasic()
 
@@ -67,7 +67,7 @@ def custom_openapi() -> Dict[str, Any]:
     return app.openapi_schema
 
 
-app.openapi = custom_openapi
+app.openapi = custom_openapi  # type: ignore[method-assign]
 
 
 #
@@ -79,5 +79,5 @@ def read_items(
     limit: int = 100,
     q: str = "",
 ) -> List[schemas.ItemBase]:
-    items = []
+    items: list[schemas.ItemBase] = []
     return items
