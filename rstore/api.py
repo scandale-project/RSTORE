@@ -23,6 +23,7 @@ app = FastAPI()
 
 http_security = Depends(security)
 
+
 def verification(creds: HTTPBasicCredentials = http_security):
     """Verify the credentials via HTTP Basic Authentication method."""
     if not config.AUTHENTICATION_REQUIRED:
@@ -37,6 +38,7 @@ def verification(creds: HTTPBasicCredentials = http_security):
             detail="Incorrect email or password",
             headers={"WWW-Authenticate": "Basic"},
         )
+
 
 def custom_openapi() -> Dict[str, Any]:
     if app.openapi_schema:
@@ -63,6 +65,7 @@ def custom_openapi() -> Dict[str, Any]:
     }
     app.openapi_schema = openapi_schema
     return app.openapi_schema
+
 
 app.openapi = custom_openapi
 
