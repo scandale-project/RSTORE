@@ -1,16 +1,37 @@
-[tool.poetry]
+[build-system]
+requires = ["poetry-core>=2.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
 name = "rstore"
 version = "0.1.0"
 description = "Report Storage and Tracking of Observations and Records Efficiently"
-authors = ["Cédric Bonhomme <cedric@cedricbonhomme.org>"]
+authors = [
+    {name = "Cédric Bonhomme", email = "cedric.bonhomme@circl.lu"}
+]
 license = "AGPL-3.0-or-later"
 readme = "README.md"
+keywords = ["observations", "evidences", "kvrocks", "api", "scanning", "csirt"]
+
+dynamic = ["classifiers"]
+
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "pydantic (>=2.10.6)",
+    "fastapi (>=0.115.8)",
+    "valkey (>=6.1.0)",
+    "uvicorn (>=0.34.0)",
+]
+
+
+[project.urls]
 homepage = "https://github.com/scandale-project/RSTORE"
 repository = "https://github.com/scandale-project/RSTORE"
 documentation = "https://rstore.readthedocs.io"
 
-keywords = ["observations", "evidences", "kvrocks", "api", "scanning", "csirt"]
 
+[tool.poetry]
+requires-poetry = ">=2.0"
 classifiers = [
     "Environment :: Console",
     "Development Status :: 4 - Beta",
@@ -25,12 +46,6 @@ classifiers = [
     "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)"
 ]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-pydantic = "^2.8.2"
-fastapi = "^0.111.1"
-valkey = "^6.0.0b1"
-uvicorn = "^0.30.4"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.11.1"
@@ -48,9 +63,6 @@ sphinxcontrib-mermaid = "^0.9.2"
 sphinxcontrib-bibtex = "^2.6.2"
 sphinxcontrib-openapi = "^0.8.4"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
 python_version = "3.11"

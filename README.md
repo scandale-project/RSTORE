@@ -34,5 +34,5 @@ See the [installation section](https://rstore.readthedocs.io/en/latest/installat
 RSTORE is distributed under the terms of the
 [GNU Affero General Public License version 3](https://www.gnu.org/licenses/agpl-3.0.html).
 
-- Copyright (C) 2024 [CIRCL - Computer Incident Response Center Luxembourg](https://www.circl.lu)
-- Copyright (C) 2024 [Cédric Bonhomme](https://www.cedricbonhomme.org)
+- Copyright (C) 2024-2025 [CIRCL - Computer Incident Response Center Luxembourg](https://www.circl.lu)
+- Copyright (C) 2024-2025 [Cédric Bonhomme](https://www.cedricbonhomme.org)
